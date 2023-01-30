@@ -24,6 +24,14 @@ namespace CPRG211E_Lab2.Entities
             }
         }
 
+        public override double Pay
+        {
+            get
+            {
+                return salary;
+            }
+        }
+
         /// <summary>
         /// User-defined constructor
         /// </summary>

@@ -16,6 +16,11 @@ namespace CPRG211E_Lab2.Entities
         // TODO: Add remaining fields, properties, and constructor parameters for general employee.
         protected string id;
         protected string name;
+        protected string address;
+        protected string phone;
+        protected long sin;
+        protected string birthdate;
+        protected string department;
 
         public string Id
         {
@@ -25,6 +30,14 @@ namespace CPRG211E_Lab2.Entities
         public string Name
         {
             get => name;
+        }
+
+        public virtual double Pay
+        {
+            get
+            {
+                return 0;
+            }
         }
 
         /// <summary>
@@ -40,10 +53,10 @@ namespace CPRG211E_Lab2.Entities
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>
-        public Employee(string id, string name)
+        /*public Employee(string id, string name)
         {
             this.id = id;
             this.name = name;
-        }
+        }*/
     }
 }
